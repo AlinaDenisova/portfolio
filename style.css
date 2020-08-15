@@ -1,0 +1,108 @@
+/* global */
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+.grid-2{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #101214;
+    color: #7A7C80;
+
+}
+
+h2,.white{
+    color: #fff;
+}
+
+a{
+    color: #7A7C80;
+    text-decoration: none;
+}
+
+.left-column {
+    padding-top: 40vh;
+    padding-left: 20vw;
+    text-align: center;
+}
+
+.left-column p {
+    font-size: 1.1rem;
+    padding-bottom: 10px;
+    margin: 0;
+}
+
+.left-column h2 {
+    font-size: 1.7rem;
+    margin-bottom: 10px;
+}
+
+.right-column {
+    padding-top: 40vh;
+    width: 85%;
+}
+
+.right-column h2 {
+    font-size: 1.7rem;
+    margin-bottom: 10px;
+}
+
+.right-column p {
+    font-size: 1.1rem;
+    padding-bottom: 10px;
+    margin: 0;
+}
+
+.projects__list {
+    padding: 0;
+}
+
+.projects__list li {
+    display:flex;
+}
+
+.projects__item-link {
+    display: flex;
+    width:50%;
+    padding: 5px;
+    font-size: 1.2rem;
+    padding-left: 0;
+}
+
+.projects__item-link--repo {
+    width: 50%;
+}
+
+.contacts__link {
+    display: block;
+    padding-bottom: 10px;
+}
+
+
+.right-column a:hover,
+.left-column a:hover  {
+    color: #fff;
+    cursor: pointer;
+}
+
+/* media queres */
+@media(max-width:780px){
+    .grid-2{
+        grid-template-columns: 1fr;
+    }
+
+    .left-column{
+        padding:0;
+        pa
+        dding-top: 5rem;
+    }
+    .right-column{
+        padding: 0;
+        padding-left: 1.5rem;
+        padding-top: 2rem;
+    }
+}
